@@ -1,11 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Ryutaro note</title>
-        <link>https://ryutaro-a.github.io/ryutaro1104/</link>
-        <description>This is Ryutaro&#39;s Page.</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 29 May 2022 12:38:06 &#43;0900</lastBuildDate>
-            <atom:link href="https://ryutaro-a.github.io/ryutaro1104/index.xml" rel="self" type="application/rss+xml" />
-        <item>
+        <title>All Posts - Ryutaro note</title>
+        <link>https://ryutaro-a.github.io/ryutaro1104/posts/</link>
+        <description>All Posts | Ryutaro note</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 29 May 2022 12:38:06 &#43;0900</lastBuildDate><atom:link href="https://ryutaro-a.github.io/ryutaro1104/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Second</title>
     <link>https://ryutaro-a.github.io/ryutaro1104/second/</link>
     <pubDate>Sun, 29 May 2022 12:38:06 &#43;0900</pubDate><guid>https://ryutaro-a.github.io/ryutaro1104/second/</guid>
