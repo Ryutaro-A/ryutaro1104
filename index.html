@@ -100,6 +100,59 @@
         alt="/images/image.webp"
         title="/images/image.webp" /></a></div><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"><a href="https://github.com/Ryutaro-A" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://twitter.com/@ryu1104_m" title="Twitter" target="_blank" rel="noopener noreffer me"><i class="fab fa-twitter fa-fw"></i></a><a href="https://ryutaro-a.github.io/ryutaro1104/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <div class="summary-card"><article class="summary" itemscope itemtype="http://schema.org/Article" ><div class="featured-image-preview">
+            <a href="https://ryutaro-a.github.io/ryutaro1104/fairseq-env/"><img
+        class="lazyload"
+        src="https://ryutaro-a.github.io/ryutaro1104/svg/loading.min.svg"
+        data-src="https://ryutaro-a.github.io/ryutaro1104/posts/fairseq-env/preview.png"
+        data-srcset="https://ryutaro-a.github.io/ryutaro1104/posts/fairseq-env/preview.png, https://ryutaro-a.github.io/ryutaro1104/posts/fairseq-env/preview.png 1.5x, https://ryutaro-a.github.io/ryutaro1104/posts/fairseq-env/preview.png 2x"
+        data-sizes="auto"
+        alt="/posts/fairseq-env/preview.png"
+        title="/posts/fairseq-env/preview.png" /></a>
+        </div><h2 class="single-title" itemprop="name headline">
+        <a href="https://ryutaro-a.github.io/ryutaro1104/fairseq-env/">Google Colabでfairseq入門</a>
+    </h2><div class="post-meta"><span class="post-author"><a href="https://ryutaro-a.github.io/ryutaro1104/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Ryutaro-A</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-05-29">2022-05-29</time></span>&nbsp;<span class="post-category">included in <a href="https://ryutaro-a.github.io/ryutaro1104/categories/%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89/"><i class="far fa-folder fa-fw"></i>環境構築</a></span></div><a class="content" href="https://ryutaro-a.github.io/ryutaro1104/fairseq-env/">はじめに こんにちは！りゅうです。
+今日は最近？流行っているfairseqをColabを使って簡単に動かす方法を紹介します。
+私が指導教授や研究室の同期に触発されて、Colabで動かそうと思ったときにそのままでは動かなかったので備忘録としてその手順をここに書いておこうと思います。（ちなみに1回動かして以降使ってない・・・）
+ちなみにfairseqとは、Facebookの人工知能研究チームが開発した機械学習用(主にTransformer)のフレームワークです。
+Pytorchで作成されていることから有志によって確立された改造方法も存在し、論文でも見かけたりと、研究でも使われるようになっていると思います。
+以下公式GitHub↓
+
+参考 
+fairseqの導入 fairseqのインストールは公式Githubにあるものをそのままコピーして使います。
+1 2 3  git clone https://github.com/pytorch/fairseq cd fairseq pip install --editable ./   上記コマンドでインストールしてから
+1 2 3 4  fairseq-train #エラー文 No package metadata was found for fairseq   コマンドを試しに打ってみた際に発生したエラーです。
+公式githubのissueによるとパスが通っていないことが原因のようでした。
+そこで以下のようにPYTHONPATHにfairseqがある場所を追加してあげます。
+1 2 3 4  import os os.environ[&#39;PYTHONPATH&#39;] += &#34;:/content/fairseq/&#34; ! echo $PYTHONPATH   この操作でパスが通ってfairseq-trainなどのコマンドが使えるようになります。
+fairseq本体ディレクトリのパスさえ通せばいいので、パスの部分は適宜書き換えて使ってみてください。
+それでは良きfairseqライフを。</a><div class="post-footer"><ul class="post-tags"><li><a href="https://ryutaro-a.github.io/ryutaro1104/tags/%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89/">環境構築</a></li><li><a href="https://ryutaro-a.github.io/ryutaro1104/tags/python/">Python</a></li><li><a href="https://ryutaro-a.github.io/ryutaro1104/tags/colab/">Colab</a></li></ul></div>
+</article>
+<article class="summary" itemscope itemtype="http://schema.org/Article" ><div class="featured-image-preview">
+            <a href="https://ryutaro-a.github.io/ryutaro1104/fundamental_svm/"><img
+        class="lazyload"
+        src="https://ryutaro-a.github.io/ryutaro1104/svg/loading.min.svg"
+        data-src="https://ryutaro-a.github.io/ryutaro1104/posts/fundamental_svm/preview.png"
+        data-srcset="https://ryutaro-a.github.io/ryutaro1104/posts/fundamental_svm/preview.png, https://ryutaro-a.github.io/ryutaro1104/posts/fundamental_svm/preview.png 1.5x, https://ryutaro-a.github.io/ryutaro1104/posts/fundamental_svm/preview.png 2x"
+        data-sizes="auto"
+        alt="/posts/fundamental_svm/preview.png"
+        title="/posts/fundamental_svm/preview.png" /></a>
+        </div><h2 class="single-title" itemprop="name headline">
+        <a href="https://ryutaro-a.github.io/ryutaro1104/fundamental_svm/">SVMで超機械学習入門！</a>
+    </h2><div class="post-meta"><span class="post-author"><a href="https://ryutaro-a.github.io/ryutaro1104/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Ryutaro-A</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-05-29">2022-05-29</time></span>&nbsp;<span class="post-category">included in <a href="https://ryutaro-a.github.io/ryutaro1104/categories/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92/"><i class="far fa-folder fa-fw"></i>機械学習</a></span></div><a class="content" href="https://ryutaro-a.github.io/ryutaro1104/fundamental_svm/">はじめに 機械学習に関する入門サイト見ていると、難しいことが書いてあったりして、知識０の人がとっつきにくい印象があります。 まあテーマとして確かに難しいのでしょうがないですが&hellip;. 「数学や機械学習の知識が0でも、pythonの知識さえあれば誰でも実装できる」というのを目標に記事を書いていきたいと思います。 今回の記事では難しいことは説明せず、とりあえず機械学習というものに触れてみるというスタンスで、進めていきます。
+対象者 ・pythonがある程度わかる ・機械学習に興味があるけど、何も知らない ・大学の授業で概要は学んだけど、実際にどう実装すればいいかわからない
+環境 python 3.8.5 scikit-learn 0.231 ##まずはインストール
+1  pip install scikit-learn   csvファイルの読み込みにnumpyを使うのでインストール済みでない方はインストールしてください。
+1  pip install numpy   用語解説 ######scikit-learnとは scikit-learn （サイキット・ラーン）(旧称：scikits.learn) はPythonのオープンソース機械学習ライブラリ[2]である。サポートベクターマシン、ランダムフォレスト、Gradient Boosting（英語版）、k近傍法、DBSCANなどを含む様々な分類、回帰、クラスタリングアルゴリズムを備えており、Pythonの数値計算ライブラリのNumPyとSciPyとやり取りするよう設計されている。(wikipediaより）
+うん、まあこれを見ても意味がわからないと思うので、今回は簡単に、「機械学習をサポートしてくれるライブラリ」と覚えておきましょう。
+SVMとは サポートベクターマシン（英: support vector machine, SVM）は、教師あり学習を用いるパターン認識モデルの一つである。分類や回帰へ適用できる。 サポートベクターマシンは、現在知られている手法の中でも認識性能が優れた学習モデルの一つである。サポートベクターマシンが優れた認識性能を発揮することができる理由は、未学習データに対して高い識別性能を得るための工夫があるためである。（wikipediaより）
+簡単に言うと、下記の画像のように線を引いて、データを分類していく機械学習手法*のことです。 一口に機械学習といっても様々な方法が存在します。 SVM(サポートベクターマシン)はその一つです。
+https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/2880px-Kernel_Machine.svg.png (wikipediaより)
+目的変数とは 機械学習で予測したい対象です。 例えば、天気を予測したいときの目的変数は晴れや、曇りや雨などになります。
+説明変数とは 予測するために必要な情報のことです。 例えば、天気を予測したいときに必要な、降水量や湿度などがこれにあたります。
+データ データは基本的には数が多いほど精度が高くなりますが、今回はお試しなので、少なめのデータを用意します。 このデータは今年の天気のデータです。 まあ天気データは気象庁のHPにいくらでもあるので、興味が湧いたら見てみてください。 左から、 気温、降水量、日照時間、湿度、天気(0:晴れ、1:曇り、2:雨) を表しています。 このデータで言うと、気温、降水量、日照時間、湿度までが説明変数、**天気(0:晴れ、1:曇り、2:雨)**が目的変数です。
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  6.</a><div class="post-footer"><ul class="post-tags"><li><a href="https://ryutaro-a.github.io/ryutaro1104/tags/python/">Python</a></li><li><a href="https://ryutaro-a.github.io/ryutaro1104/tags/nlp/">NLP</a></li></ul></div>
+</article>
+<article class="summary" itemscope itemtype="http://schema.org/Article" ><div class="featured-image-preview">
             <a href="https://ryutaro-a.github.io/ryutaro1104/nlp100-env/"><img
         class="lazyload"
         src="https://ryutaro-a.github.io/ryutaro1104/svg/loading.min.svg"

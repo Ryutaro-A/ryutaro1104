@@ -1,0 +1,25 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>機械学習 - Category - Ryutaro note</title>
+        <link>https://ryutaro-a.github.io/ryutaro1104/categories/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92/</link>
+        <description>機械学習 - Category - Ryutaro note</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 29 May 2022 12:38:06 &#43;0900</lastBuildDate><atom:link href="https://ryutaro-a.github.io/ryutaro1104/categories/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92/" rel="self" type="application/rss+xml" /><item>
+    <title>SVMで超機械学習入門！</title>
+    <link>https://ryutaro-a.github.io/ryutaro1104/fundamental_svm/</link>
+    <pubDate>Sun, 29 May 2022 12:38:06 &#43;0900</pubDate><guid>https://ryutaro-a.github.io/ryutaro1104/fundamental_svm/</guid>
+    <description><![CDATA[はじめに 機械学習に関する入門サイト見ていると、難しいことが書いてあったりして、知識０の人がとっつきにくい印象があります。 まあテーマとして確かに難しいのでしょうがないですが&hellip;. 「数学や機械学習の知識が0でも、pythonの知識さえあれば誰でも実装できる」というのを目標に記事を書いていきたいと思います。 今回の記事では難しいことは説明せず、とりあえず機械学習というものに触れてみるというスタンスで、進めていきます。
+対象者 ・pythonがある程度わかる ・機械学習に興味があるけど、何も知らない ・大学の授業で概要は学んだけど、実際にどう実装すればいいかわからない
+環境 python 3.8.5 scikit-learn 0.231 ##まずはインストール
+1  pip install scikit-learn   csvファイルの読み込みにnumpyを使うのでインストール済みでない方はインストールしてください。
+1  pip install numpy   用語解説 ######scikit-learnとは scikit-learn （サイキット・ラーン）(旧称：scikits.learn) はPythonのオープンソース機械学習ライブラリ[2]である。サポートベクターマシン、ランダムフォレスト、Gradient Boosting（英語版）、k近傍法、DBSCANなどを含む様々な分類、回帰、クラスタリングアルゴリズムを備えており、Pythonの数値計算ライブラリのNumPyとSciPyとやり取りするよう設計されている。(wikipediaより）
+うん、まあこれを見ても意味がわからないと思うので、今回は簡単に、「機械学習をサポートしてくれるライブラリ」と覚えておきましょう。
+SVMとは サポートベクターマシン（英: support vector machine, SVM）は、教師あり学習を用いるパターン認識モデルの一つである。分類や回帰へ適用できる。 サポートベクターマシンは、現在知られている手法の中でも認識性能が優れた学習モデルの一つである。サポートベクターマシンが優れた認識性能を発揮することができる理由は、未学習データに対して高い識別性能を得るための工夫があるためである。（wikipediaより）
+簡単に言うと、下記の画像のように線を引いて、データを分類していく機械学習手法*のことです。 一口に機械学習といっても様々な方法が存在します。 SVM(サポートベクターマシン)はその一つです。
+https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/2880px-Kernel_Machine.svg.png (wikipediaより)
+目的変数とは 機械学習で予測したい対象です。 例えば、天気を予測したいときの目的変数は晴れや、曇りや雨などになります。
+説明変数とは 予測するために必要な情報のことです。 例えば、天気を予測したいときに必要な、降水量や湿度などがこれにあたります。
+データ データは基本的には数が多いほど精度が高くなりますが、今回はお試しなので、少なめのデータを用意します。 このデータは今年の天気のデータです。 まあ天気データは気象庁のHPにいくらでもあるので、興味が湧いたら見てみてください。 左から、 気温、降水量、日照時間、湿度、天気(0:晴れ、1:曇り、2:雨) を表しています。 このデータで言うと、気温、降水量、日照時間、湿度までが説明変数、**天気(0:晴れ、1:曇り、2:雨)**が目的変数です。
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  6.]]></description>
+</item>
+</channel>
+</rss>

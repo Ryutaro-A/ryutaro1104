@@ -1,0 +1,28 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Colab - Tag - Ryutaro note</title>
+        <link>https://ryutaro-a.github.io/ryutaro1104/tags/colab/</link>
+        <description>Colab - Tag - Ryutaro note</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 29 May 2022 12:38:06 &#43;0900</lastBuildDate><atom:link href="https://ryutaro-a.github.io/ryutaro1104/tags/colab/" rel="self" type="application/rss+xml" /><item>
+    <title>Google Colabでfairseq入門</title>
+    <link>https://ryutaro-a.github.io/ryutaro1104/fairseq-env/</link>
+    <pubDate>Sun, 29 May 2022 12:38:06 &#43;0900</pubDate><guid>https://ryutaro-a.github.io/ryutaro1104/fairseq-env/</guid>
+    <description><![CDATA[はじめに こんにちは！りゅうです。
+今日は最近？流行っているfairseqをColabを使って簡単に動かす方法を紹介します。
+私が指導教授や研究室の同期に触発されて、Colabで動かそうと思ったときにそのままでは動かなかったので備忘録としてその手順をここに書いておこうと思います。（ちなみに1回動かして以降使ってない・・・）
+ちなみにfairseqとは、Facebookの人工知能研究チームが開発した機械学習用(主にTransformer)のフレームワークです。
+Pytorchで作成されていることから有志によって確立された改造方法も存在し、論文でも見かけたりと、研究でも使われるようになっていると思います。
+以下公式GitHub↓
+
+参考 
+fairseqの導入 fairseqのインストールは公式Githubにあるものをそのままコピーして使います。
+1 2 3  git clone https://github.com/pytorch/fairseq cd fairseq pip install --editable ./   上記コマンドでインストールしてから
+1 2 3 4  fairseq-train #エラー文 No package metadata was found for fairseq   コマンドを試しに打ってみた際に発生したエラーです。
+公式githubのissueによるとパスが通っていないことが原因のようでした。
+そこで以下のようにPYTHONPATHにfairseqがある場所を追加してあげます。
+1 2 3 4  import os os.environ[&#39;PYTHONPATH&#39;] += &#34;:/content/fairseq/&#34; ! echo $PYTHONPATH   この操作でパスが通ってfairseq-trainなどのコマンドが使えるようになります。
+fairseq本体ディレクトリのパスさえ通せばいいので、パスの部分は適宜書き換えて使ってみてください。
+それでは良きfairseqライフを。]]></description>
+</item>
+</channel>
+</rss>

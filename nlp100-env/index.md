@@ -99,7 +99,7 @@ $ sudo apt install mecab mecab-ipadic-utf8 libmecab-dev swig
 CabocChaは第5章で必要になる係り受け解析用ツールです。<br>
 まずは依存パッケージであるCRF++を導入します。<br>
 [このページ](https://drive.google.com/drive/folders/0B4y35FiV1wh7fngteFhHQUN2Y1B5eUJBNHZUemJYQV9VWlBUb3JlX0xBdWVZTWtSbVBneU0?resourcekey=0-NW5cPRv1Xr2-Vfo_xlDTLQ)から最新のものをダウンロードする（wgetでも出来なくはないけど上手くいかないこともある？）<br>
-`CRF++-0.58.tar.gz`のあるディレクトリで以下のコマンドを使う<br>
+`CRF++-0.58.tar.gz`のあるディレクトリで以下のコマンドを使う。<br>
 ```bash
 $ tar xzvf CRF++-0.58.tar.gz
 $ cd CRF++-0.58
@@ -109,7 +109,7 @@ $ sudo make install
 ```
 続いてCaboCha本体の導入です。<br>
 [このページ](https://drive.google.com/drive/folders/0B4y35FiV1wh7cGRCUUJHVTNJRnM?resourcekey=0-ym0BJTHMkjw3y1AEgwwaxA)からから最新のものをダウンロードする（wgetでも出来なくはないけど上手くいかないこともある？）<br>
-`cabocha-0.69.tar.bz2`のあるディレクトリで以下のコマンドを使う<br>
+`cabocha-0.69.tar.bz2`のあるディレクトリで以下のコマンドを使う。<br>
 ```bash
 $ tar xjvf cabocha-0.69.tar.bz2
 $ cd cabocha-0.69
