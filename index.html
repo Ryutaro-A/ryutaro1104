@@ -188,6 +188,48 @@ Pyenvの導入 Pythonのバージョン管理に便利なPyenvを導入します
 Pyenvの導入は簡単で、WSL上で以下のコマンドをすべて打つだけで終わりです。
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  # 依存パッケージの導入 $ sudo apt install -y build-essential $ sudo apt install -y libffi-dev $ sudo apt install -y libssl-dev # openssl $ sudo apt install -y zlib1g-dev $ sudo apt install -y libbz2-dev libreadline-dev libsqlite3-dev # sqlite3, bz2, readline $ sudo apt install -y git $ cd $ git clone https://github.</a><div class="post-footer"><ul class="post-tags"><li><a href="https://ryutaro-a.github.io/ryutaro1104/tags/%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89/">環境構築</a></li><li><a href="https://ryutaro-a.github.io/ryutaro1104/tags/python/">Python</a></li><li><a href="https://ryutaro-a.github.io/ryutaro1104/tags/wsl/">WSL</a></li><li><a href="https://ryutaro-a.github.io/ryutaro1104/tags/nlp/">NLP</a></li></ul></div>
 </article>
+<article class="summary" itemscope itemtype="http://schema.org/Article" ><div class="featured-image-preview">
+            <a href="https://ryutaro-a.github.io/ryutaro1104/%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86100%E6%9C%AC%E3%83%8E%E3%83%83%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89/"><img
+        class="lazyload"
+        src="https://ryutaro-a.github.io/ryutaro1104/svg/loading.min.svg"
+        data-src="https://ryutaro-a.github.io/ryutaro1104/images/nlp100-nock-preview.png"
+        data-srcset="https://ryutaro-a.github.io/ryutaro1104/images/nlp100-nock-preview.png, https://ryutaro-a.github.io/ryutaro1104/images/nlp100-nock-preview.png 1.5x, https://ryutaro-a.github.io/ryutaro1104/images/nlp100-nock-preview.png 2x"
+        data-sizes="auto"
+        alt="/images/nlp100-nock-preview.png"
+        title="テスト" /></a>
+        </div><h2 class="single-title" itemprop="name headline">
+        <a href="https://ryutaro-a.github.io/ryutaro1104/%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86100%E6%9C%AC%E3%83%8E%E3%83%83%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89/">言語処理100本ノックのための環境構築</a>
+    </h2><div class="post-meta"><span class="post-author"><a href="https://ryutaro-a.github.io/ryutaro1104/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Ryutaro-A</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-05-29">2022-05-29</time></span>&nbsp;<span class="post-category">included in <a href="https://ryutaro-a.github.io/ryutaro1104/categories/%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89/"><i class="far fa-folder fa-fw"></i>環境構築</a></span></div><a class="content" href="https://ryutaro-a.github.io/ryutaro1104/%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86100%E6%9C%AC%E3%83%8E%E3%83%83%E3%82%AF%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89/">はじめに みなさんは言語処理100本ノックを知っていますか？
+言語処理100本ノックとは東工大の岡崎直観先生らによって言語処理を楽しく学ぶことを目的として作成された問題集です。
+ 私の所属している研究室でも初学者向けの教材として利用されていますが、環境構築で躓いている人がかなりいたため、研究室内のページで環境構築の解説を作成しました。
+しかし研究室内向けだけでは勿体ないと思い、この度Qiitanに投稿することにしました。
+検索しても言語処理100本ノックのためのまとまった環境構築方法がなかったというのも大きな理由です。
+注意 本記事で紹介している環境構築方法は言語処理100本ノックを解くことを主目的としているため、ほかの用途には適さなかったり、無駄が多かったりしますので、予めご了承ください。
+また、本記事はWindowsユーザ向けなのでMacユーザの方は適宜読み替えたりしてください。
+要望が上がればMac端末で動作を検証してからMac向けの記事を書くかもしれません。
+環境構築 まずはWSLを入れよう！ 言語処理100本ノックを解く上で一番簡単かつ解きやすい環境としてWSLというものがあります。
+これはubuntuと呼ばれるLinux系のOSをWindows内に仮想的に作れるようにしたツールで、2ステップで簡単に導入できます。
+ステップ1 Windows側でWSLが使用できるように機能を有効化します。
+wiindowsボタンを押してからwindowsと検索して、Windowsの機能の有効化または無効化という項目をクリックしてください。
+画像で言うと赤枠の部分です。
+すると様々な項目が表示されるので、Linux用Windowsサブシステムにチェックを入れてください。
+こちらも画像で言うと赤枠の部分です。
+これでステップ1は完了です。
+ステップ2 続いてWSL本体のダウンロードです。
+スタート画面などからMicrosoft Storeにアクセスしてubuntuと検索してください。
+様々なバージョンが表示されますが、ここではUbuntu20.04LTSをダウンロードしましょう。（ちななみにLTSはLong Time Supportの略、つまり安定板のようなものです）
+ダウンロード出来たらスタート画面などから先ほどダウンロードしたUbuntu20.04LTSを起動してください。
+Pyenvの導入 Pythonのバージョン管理に便利なPyenvを導入します。
+なぜバージョンなんて管理するの？と思われるかもしれません。
+言語処理100本ノックを解く上では１つのバージョンで事足りますが、Pythonを使っていると使いたいライブラリが一定のバージョンにしか対応していないなどということがかなりの頻度で現れます。
+そんなときにPyenvでバージョンを管理しておくと1つのコマンドを打つだけで好きなバージョンのPythonに切り替えることができます。よって本記事ではPyenvの使用を強く推奨します。
+Pyenvの導入は簡単で、WSL上で以下のコマンドをすべて打つだけで終わりです。
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  # 依存パッケージの導入 $ sudo apt install -y build-essential $ sudo apt install -y libffi-dev $ sudo apt install -y libssl-dev # openssl $ sudo apt install -y zlib1g-dev $ sudo apt install -y libbz2-dev libreadline-dev libsqlite3-dev # sqlite3, bz2, readline $ sudo apt install -y git $ cd $ git clone https://github.</a><div class="post-footer"><ul class="post-tags"><li><a href="https://ryutaro-a.github.io/ryutaro1104/tags/%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89/">環境構築</a></li><li><a href="https://ryutaro-a.github.io/ryutaro1104/tags/python/">Python</a></li><li><a href="https://ryutaro-a.github.io/ryutaro1104/tags/wsl/">WSL</a></li><li><a href="https://ryutaro-a.github.io/ryutaro1104/tags/nlp/">NLP</a></li></ul></div>
+</article>
+<article class="summary" itemscope itemtype="http://schema.org/Article" ><h2 class="single-title" itemprop="name headline">
+        <a href="https://ryutaro-a.github.io/ryutaro1104/first_post/">First_post</a>
+    </h2><div class="post-meta"><span class="post-author"><a href="https://ryutaro-a.github.io/ryutaro1104/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Ryutaro-A</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-05-29">2022-05-29</time></span></div><a class="content" href="https://ryutaro-a.github.io/ryutaro1104/first_post/"></a><div class="post-footer"></div>
+</article>
 </div></div></div>
             </main>
             <footer class="footer"><div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://ryutaro-a.github.io/ryutaro1104/">Ryutaro-A</a></span></div>
@@ -214,7 +256,7 @@ if ('serviceWorker' in navigator) {
                 <i class="fas fa-chevron-up fa-fw"></i>
             </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
                 <i class="fas fa-comment-alt fa-fw"></i>
-            </a></div><link rel="stylesheet" href="https://ryutaro-a.github.io/ryutaro1104/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="https://ryutaro-a.github.io/ryutaro1104/lib/animate/animate.min.css"><link rel="stylesheet" href="https://ryutaro-a.github.io/ryutaro1104/lib/cookieconsent/cookieconsent.min.css"><script src="https://ryutaro-a.github.io/ryutaro1104/lib/autocomplete/autocomplete.min.js"></script><script src="https://ryutaro-a.github.io/ryutaro1104/lib/lunr/lunr.min.js"></script><script src="https://ryutaro-a.github.io/ryutaro1104/lib/lazysizes/lazysizes.min.js"></script><script src="https://ryutaro-a.github.io/ryutaro1104/lib/typeit/typeit.min.js"></script><script src="https://ryutaro-a.github.io/ryutaro1104/lib/cookieconsent/cookieconsent.min.js"></script><script>window.config={"code":{"maxShownLines":10},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"id-1":"This is Ryutaro's Page."},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"]},"duration":-1,"speed":100}};</script><script src="https://ryutaro-a.github.io/ryutaro1104/js/theme.min.js"></script><script>
+            </a></div><link rel="stylesheet" href="https://ryutaro-a.github.io/ryutaro1104/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="https://ryutaro-a.github.io/ryutaro1104/lib/animate/animate.min.css"><script src="https://ryutaro-a.github.io/ryutaro1104/lib/autocomplete/autocomplete.min.js"></script><script src="https://ryutaro-a.github.io/ryutaro1104/lib/lunr/lunr.min.js"></script><script src="https://ryutaro-a.github.io/ryutaro1104/lib/lazysizes/lazysizes.min.js"></script><script src="https://ryutaro-a.github.io/ryutaro1104/lib/typeit/typeit.min.js"></script><script>window.config={"code":{"maxShownLines":10},"data":{"id-1":"This is Ryutaro's Page."},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"]},"duration":-1,"speed":100}};</script><script src="https://ryutaro-a.github.io/ryutaro1104/js/theme.min.js"></script><script>
             window.fathom=window.fathom||function(){(fathom.q=fathom.q||[]).push(arguments);};
             fathom('set', 'siteId', 'G-HL03B0T7JV');
             fathom('trackPageview');
