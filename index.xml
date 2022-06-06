@@ -106,11 +106,5 @@ Pyenvの導入 Pythonのバージョン管理に便利なPyenvを導入します
 Pyenvの導入は簡単で、WSL上で以下のコマンドをすべて打つだけで終わりです。
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  # 依存パッケージの導入 $ sudo apt install -y build-essential $ sudo apt install -y libffi-dev $ sudo apt install -y libssl-dev # openssl $ sudo apt install -y zlib1g-dev $ sudo apt install -y libbz2-dev libreadline-dev libsqlite3-dev # sqlite3, bz2, readline $ sudo apt install -y git $ cd $ git clone https://github.]]></description>
 </item>
-<item>
-    <title>First_post</title>
-    <link>https://ryutaro-a.github.io/ryutaro1104/first_post/</link>
-    <pubDate>Sun, 29 May 2022 09:13:56 &#43;0900</pubDate><guid>https://ryutaro-a.github.io/ryutaro1104/first_post/</guid>
-    <description><![CDATA[]]></description>
-</item>
 </channel>
 </rss>
