@@ -2,19 +2,20 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://ryutaro-a.github.io/ryutaro1104/categories/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://ryutaro-a.github.io/ryutaro1104/tags/colab/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://ryutaro-a.github.io/ryutaro1104/fairseq-env/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://ryutaro-a.github.io/ryutaro1104/tags/nlp/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://ryutaro-a.github.io/ryutaro1104/posts/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://ryutaro-a.github.io/ryutaro1104/tags/python/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://ryutaro-a.github.io/ryutaro1104/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://ryutaro-a.github.io/ryutaro1104/fundamental_svm/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://ryutaro-a.github.io/ryutaro1104/tags/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://ryutaro-a.github.io/ryutaro1104/tags/wsl/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://ryutaro-a.github.io/ryutaro1104/categories/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://ryutaro-a.github.io/ryutaro1104/tags/%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://ryutaro-a.github.io/ryutaro1104/categories/%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://ryutaro-a.github.io/ryutaro1104/nlp100-env/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://ryutaro-a.github.io/ryutaro1104/categories/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://ryutaro-a.github.io/ryutaro1104/tags/colab/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://ryutaro-a.github.io/ryutaro1104/fairseq-env/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://ryutaro-a.github.io/ryutaro1104/tags/nlp/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://ryutaro-a.github.io/ryutaro1104/posts/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://ryutaro-a.github.io/ryutaro1104/tags/python/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://ryutaro-a.github.io/ryutaro1104/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://ryutaro-a.github.io/ryutaro1104/fundamental_svm/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://ryutaro-a.github.io/ryutaro1104/tags/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://ryutaro-a.github.io/ryutaro1104/tags/wsl/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://ryutaro-a.github.io/ryutaro1104/categories/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://ryutaro-a.github.io/ryutaro1104/tags/%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://ryutaro-a.github.io/ryutaro1104/categories/%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://ryutaro-a.github.io/ryutaro1104/nlp100-env/</loc><lastmod>2022-05-29T12:38:06&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://ryutaro-a.github.io/ryutaro1104/about/</loc><priority>0</priority></url><url>
+            <loc>https://ryutaro-a.github.io/ryutaro1104/slides/</loc><priority>0</priority></url><url>
             <loc>https://ryutaro-a.github.io/ryutaro1104/offline/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
